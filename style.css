@@ -1,0 +1,45 @@
+body {
+    background: #146973;
+}
+div.ball {
+    background: linear-gradient(233deg, #FF8900 0%, #DD0E0E 100%);
+    border-radius: 50%;
+}
+.xl-ball {
+    width: 35vmax;
+    height: 35vmax;
+    box-shadow: 0vw 1vmax 0.6vmax #00000029;
+}
+.sm-ball {
+    filter: blur(2vmax);
+    width: 8vmax;
+    height: 8vmax;
+}
+.xs-ball {
+    filter: blur(2vmax);
+    width: 4.5vmax;
+    height: 4.5vmax;
+}
+img.home {
+    width: 25vmax;
+    height: auto;
+    position: absolute;
+    left: 37.5vmax;
+    top: 30vmin;
+}
+.blur {
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+@media (max-width: 992px) {
+    img.home {
+        left: 37.5vmin;
+        top: 30vmax;
+    }
+}
