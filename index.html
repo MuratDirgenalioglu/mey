@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<img lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body style="position: fixed;">
-    <div class="ball xl-ball float-y" style="position: absolute; left: 40vw; top: -20vw"></div>
-    <div class="ball xl-ball float-x" style="position: absolute; left: 95vw; top: 10vh;"></div>
-    <div class="ball xl-ball float-y delay" style="position: absolute; left: 80vw; top: 80vh;"></div>
-    <div class="ball xl-ball float-xy" style="position: absolute; left: -25vw; top: 75vh;"></div>
-    <div class="ball sm-ball float-xy delay" style="position: absolute; left: 13vw; top: 25vh;"></div>
-    <div class="ball sm-ball float-x" style="position: absolute; left: 55vw; top: 80vh;"></div>
-    <div class="ball xs-ball float-y" style="position: absolute; left: 22vw; top: 60vh;"></div>
-    <div class="ball xs-ball float-x delay" style="position: absolute; left: 30vw; top: 80vh;"></div>
-    <img class="home blur" src="img/whoami.png" alt="" onclick="splash()">
-    <div id="splash" class="ball xl-ball" style="position: absolute; left: 50vw; top: 50vh; height: 10px; width: 10px; display: none;"></div>
+<body>
+    <div id="splash" class="ball xl-ball" style="position: absolute; height: 10px; width: 10px; display: none; z-index: 1;"></div>
+    <div id="home" class="home-page">
+        <div class="ball xl-ball float-y" style="position: absolute; left: 40vw; top: -20vw"></div>
+        <div class="ball xl-ball float-x" style="position: absolute; left: 95vw; top: 10vh;"></div>
+        <div class="ball xl-ball float-y delay" style="position: absolute; left: 80vw; top: 80vh;"></div>
+        <div class="ball xl-ball float-xy" style="position: absolute; left: -25vw; top: 75vh;"></div>
+        <div class="ball sm-ball float-xy delay" style="position: absolute; left: 13vw; top: 25vh;"></div>
+        <div class="ball sm-ball float-x" style="position: absolute; left: 55vw; top: 80vh;"></div>
+        <div class="ball xs-ball float-y" style="position: absolute; left: 22vw; top: 60vh;"></div>
+        <div class="ball xs-ball float-x delay" style="position: absolute; left: 30vw; top: 80vh;"></div>
+        <img class="home blur" src="img/whoami.png" alt="" onclick="splash()">
+    </div>
+    <div id="who" class="who">
+        <h1>whoami?</h1>
+        <button onclick="homePage()" id="btn1" style="margin: 400px;">Home</button>
+    </div>
 </body>
 </html>
