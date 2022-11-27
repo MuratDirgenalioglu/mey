@@ -3,6 +3,6 @@ function splash() {
     splash.style.display = 'block';
     splash.classList.add('splash');
     setTimeout(() => {
-        window.location.href = "about-me.html";
+        window.location.href = "https://www.instagram.com/meyildiz_/";
     }, 1100);
 }
