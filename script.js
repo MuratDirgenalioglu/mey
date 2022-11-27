@@ -1,8 +1,8 @@
 function splash() {
-    var splash = document.getElementById('splash')
-    console.log(splash)
-    splash.style.transform = "scale(5)"
+    var splash = document.getElementById('splash');
+    splash.style.display = 'block';
+    splash.classList.add('splash');
     setTimeout(() => {
-        splash.style.transform = "scale(30)"
-    }, 500)
+        window.location.href = "about-me.html";
+    }, 1100);
 }
