@@ -1,6 +1,24 @@
-body {
-    background: #146973;
+* {
+    padding: 0;
+    margin: 0;
 }
+.home-page {
+    margin: 0;
+    background: #146973;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.who-page {
+    margin: 0;
+    background: #146973;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: 'none';
+}
+
+/* Home Page Styles */
 div.ball {
     background: linear-gradient(233deg, #FF8900 0%, #DD0E0E 100%);
     border-radius: 50%;
@@ -57,6 +75,9 @@ img.home {
 .splash {
     animation: splash 1200ms ease-out;
 }
+.splash-reverse {
+    animation: splash 1.2s ease-in reverse;
+}
 @media (max-width: 992px) {
     img.home {
         left: 37.5vmin;
@@ -104,3 +125,4 @@ img.home {
         transform: scale(250)
     }
 }
+/* Home Page Styles End */
