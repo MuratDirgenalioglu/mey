@@ -1,6 +1,8 @@
 function splash() {
     var splash = document.getElementById('splash');
     var home = document.getElementsByClassName('home')[0]
+    splash.classList.remove("ball-green")
+    splash.classList.add("ball")
     splash.style.left = (home.getBoundingClientRect().left + (home.offsetWidth / 2)) + 'px'
     splash.style.top = (home.getBoundingClientRect().top + (home.offsetHeight / 2)) + 'px'
     splash.style.display = '';
@@ -14,15 +16,17 @@ function splash() {
 }
 function homePage() {
     var splash = document.getElementById('splash');
-    var btn = document.getElementById('btn1');
-    splash.style.left = (btn.getBoundingClientRect().left + (btn.offsetWidth / 2)) + 'px'
-    splash.style.top = (btn.getBoundingClientRect().top + (btn.offsetHeight / 2)) + 'px'
+    var home = document.getElementById('who')
+    splash.classList.remove("ball")
+    splash.classList.add("ball-green")
+    splash.style.left = (home.getBoundingClientRect().left + (home.offsetWidth / 2)) + 'px'
+    splash.style.top = (home.getBoundingClientRect().top + (home.offsetHeight / 2)) + 'px'
     splash.style.display = '';
-    splash.classList.add('splash-reverse');
+    splash.classList.add('splash');
     setTimeout(() => {
         document.getElementById('home').style.display = ''
         document.getElementById('who').style.display = 'none'
         splash.style.display = 'none'
-        splash.classList.remove('splash-reverse')
+        splash.classList.remove('splash')
     }, 1000);
 }
