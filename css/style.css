@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body
+{
+    background: linear-gradient(233deg, #FF8900 0%, #DD0E0E 100%);
+}
 .home-page {
     margin: 0;
     background: #146973;
