@@ -4,7 +4,15 @@
 }
 body
 {
-    background: linear-gradient(233deg, #FF8900 0%, #DD0E0E 100%);
+    background: linear-gradient(233deg, #FF8900 0%, #e24027 100%);
+}
+.logo
+{
+    border-radius: 50%; 
+    border-color: white; 
+    border-style: solid; 
+    border-width: 2px; 
+    display: inline-block;
 }
 .home-page {
     margin: 0;
