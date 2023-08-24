@@ -2,9 +2,28 @@
     padding: 0;
     margin: 0;
 }
+html
+{
+    height: 100%;
+}
 body
 {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background-video
+{
+    width: 100%;
+    z-index: -1;
+}
+.footer
+{
     padding-bottom: 10rem;
+}
+.shadow
+{
+    box-shadow: 0vw 0.5vmax 0.3vmax #00000029;
 }
 .green
 {
@@ -12,6 +31,7 @@ body
 }
 .orange
 {
+    background: fixed;
     background: linear-gradient(233deg, #FF8900 0%, #e24027 100%);
 }
 .link-white {
@@ -22,6 +42,12 @@ body
 {
     margin-top: 3rem;
 }
+.edu-card hr 
+{
+    height: 0.2rem;
+    background-color: tomato;
+    border: none;
+}
 .logo
 {
     border-radius: 50%; 
@@ -30,15 +56,12 @@ body
     border-width: 2px; 
     display: inline-block;
 }
-.edu-card
-{
-    margin-top: 3rem;
-}
 .profile-pic {
     border-radius: 2rem;
     max-width: 100%;
     border: solid 0.8rem;
     border-color: rgba(255, 255, 255, 0.433);
+    box-shadow: 0vw 0.5vmax 0.3vmax #00000029;
 }
 .home-page {
     margin: 0;
@@ -58,17 +81,30 @@ body
 
 /* Home Page Styles */
 div.ball {
+    overflow: hidden;
     background: linear-gradient(233deg, #FF8900 0%, #DD0E0E 100%);
     border-radius: 50%;
+}
+.video {
+    overflow: hidden;
+    border-radius: 2%;
+    width: 75vw;
 }
 .edu-card
 {
     padding: 2rem;
     background-color: #12636c;
+    margin-top: 3rem;
+    box-shadow: 0vw 0.5vmax 0.3vmax #00000029;
 }
 .xl-ball {
     width: 35vmax;
     height: 35vmax;
+    box-shadow: 0vw 1vmax 0.6vmax #00000029;
+}
+.xxl-ball {
+    width: 80vmax;
+    height: 50vmax;
     box-shadow: 0vw 1vmax 0.6vmax #00000029;
 }
 .l-ball {
