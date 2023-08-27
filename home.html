@@ -8,6 +8,8 @@
     <title>Mehmed Emre Yıldız - Home</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0955a1b445.js" crossorigin="anonymous"></script>
+
     <script src="/js/script.js"></script>
 </head>
 
@@ -15,10 +17,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" style="font-size: x-large; margin-right: 5rem;">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars fa-2xl py-3 "></i>
             </button>
             <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mx-2 mb-lg-0 d-flex"
@@ -39,14 +41,22 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <img src="/img/photo.png" style="max-height: 80vh; position: absolute; bottom: 0;">
-        <img src="/img/home-text.png" style="max-height: 70vh; position: absolute; left: 20%; bottom: 30%; max-width: 70vw; z-index: -1;">
+    <div class="whoami-home">
         <a href="/index.html">
-            <img src="/img/whoami-transparent.png" style="max-height: 10vw; position: absolute; right: 1%; top: 10%;">
+            <img src="/img/whoami-transparent.png">
         </a>
+
     </div>
-    <div class="d-flex justify-content-center bottom" style="position: absolute; bottom: 0; left: 35%;">
+    <div class="container-fluid row">
+        
+        <div class="col col-md-4">
+            <img class="home-person" src="/img/photo.png">
+        </div>
+        <div class="col col-md-8">
+            <img  src="/img/home-text.png">
+        </div>  
+    </div>
+    <div class="d-flex justify-content-center contact-logos">
         <div class="m-2 p-3 logo">
             <a href="https://www.facebook.com/meyildiz94/" target="_blank">
                 <img src="/img/icons/facebook.png">

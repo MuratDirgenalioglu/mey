@@ -31,8 +31,22 @@ body
 }
 .orange
 {
-    background: fixed;
     background: linear-gradient(233deg, #FF8900 0%, #e24027 100%);
+    position: relative;
+}
+.whoami-home{
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+}
+.whoami-home img{
+    max-height: 10vw;
+}
+.contact-logos {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
 }
 .link-white {
     color: white;
@@ -167,10 +181,33 @@ img.home {
 .splash-reverse {
     animation: splash 1.2s ease-in reverse;
 }
-@media (max-width: 992px) {
+.mobile-img 
+{
+    max-width: 45%;
+}
+img.home-person {
+    max-height: 80vh;
+    
+}
+@media (max-width: 400px) {
+    img.home-person {
+        display: none;
+    }
     img.home {
         left: 37.5vmin;
         top: 30vmax;
+    }
+    .mobile-font {
+        font-size: small !important;
+        margin-bottom: 3rem;
+    }
+    .mobile-img {
+        margin-top: 0;
+        max-width: 100% !important;
+        margin-bottom: 3rem;
+    }
+    .mobile-ball {
+        display: none;
     }
 }
 @keyframes floatx {
